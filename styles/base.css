@@ -1,0 +1,178 @@
+/*------------- HEADER------------ */
+
+header {
+  background-color: #5754a8;
+  margin: 0 auto;
+  max-width: 900px;
+}
+span {
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  display: block;
+}
+
+nav {
+  background-color: #f2f2f2;
+  margin: 0 auto;
+
+  max-width: 900px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav a {
+  color: #333;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 1rem;
+  width: auto;
+}
+nav a:hover {
+  background-color: #5754a8;
+  color: #fff;
+}
+
+/*------------- MAIN ------------ */
+main {
+  text-align: center;
+
+}
+main ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+.card {
+  border: 1px solid #ccc;
+  margin: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  display: felx;
+  flex:wrap;
+}
+.card h2 {
+  background-color: #5754a8;
+  color: #fff;
+  margin: 0;
+}
+.space-card {
+  border-top: 1px solid #ccc;
+  margin: 20px;
+}
+
+.main-image {
+  width: 100px;
+  height: auto;
+  
+}
+p{
+  padding-inline: 10px;
+}
+main > section.card:nth-of-type(2) a{
+  text-decoration: none;
+  color: #333;
+}
+main > section.card:nth-of-type(2) a:hover{
+  
+  color: #5754a8;
+}
+
+
+
+
+/*------------- FOOTER ------------ */
+
+footer {
+  background-color: #5751a5;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+footer p {
+  margin: 0.25rem 0;
+}
+
+footer p:first-child,
+footer p:first-child span {
+  display: inline;
+}
+
+@media (min-width: 740px) {
+  nav ul {
+    display: flex;
+  }
+  nav ul li {
+    flex: 1 1 100%;
+  }
+ main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+main h1 {
+  grid-column: 1 / -1;
+  margin: 0;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+ #card-content-one {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+#card-content-two {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.card h2 {
+  color: white;
+  border-radius: 10px 10px 0 0;
+}
+
+
+#profile-pic{
+  margin-top: 10px;
+}
+
+#country-pic{
+  margin-top: -30px;
+}
+main > section.card:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+}
+
+main > section.card:nth-of-type(2) ul {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  text-align: left;
+  list-style: disc;
+  padding-left: 40px;
+
+}
+
+  
+  
+}
