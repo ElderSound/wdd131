@@ -63,6 +63,9 @@ main ul {
   background-color: #5754a8;
   color: #fff;
   margin: 0;
+  font-size: 1rem;
+  padding-block: 1rem;
+
 }
 .card h3 {
   border-top: 1px solid #ccc;
