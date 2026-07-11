@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    
+}
+
+header {
+  position: relative;
+  background-color: #3c096c;
+  color: white;
+  padding: 10px;
+}
+
+.site-title {
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/*---------- Ham Button ---------- */
+#menu {
+  position: absolute;
+  top: 10px;
+  right: 1rem;
+  border: 0;
+  background: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Menu Icon */
+#menu::before {
+  content: "☰";
+}
+
+/*---------- Closing Icon ---------- */
+#menu.open::before {
+  content: "✕";
+}
+
+/*---------- Nav---------- */
+.navigation {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  background-color: #3c096c;
+}
+
+.navigation a {
+  display: none;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navigation a:hover,
+.navigation a:focus {
+  background-color: white;
+  color: #3c096c;
+}
+
+/*---------- Open class ---------- */
+.navigation.open a {
+  display: block;
+}
+
+/*---------- Images ---------- */
+
+figure {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    font-weight: 700;
+}
+
+/*---------- Main ---------- */
+main {
+  width: 100%;
+  height: auto;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+main h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.temple-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+/*---------- footer ---------- */
+
+footer {
+  background-color: #3c096c;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin: auto;
+}
+
+footer p {
+  margin: 0.25rem 0;
+}
+
+footer p:first-child,
+footer p:first-child span {
+  display: inline;
+}
