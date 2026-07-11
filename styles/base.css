@@ -1,3 +1,7 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 /*------------- HEADER------------ */
 
 header {
@@ -5,7 +9,7 @@ header {
   margin: 0 auto;
   max-width: 900px;
 }
-span {
+#course-title {
   color: #fff;
   text-align: center;
   padding: 1rem;
@@ -32,7 +36,8 @@ nav a {
   padding: 1rem;
   width: auto;
 }
-nav a:hover {
+nav a:hover,
+nav a:focus{
   background-color: #5754a8;
   color: #fff;
 }
@@ -52,17 +57,17 @@ main ul {
   border: 1px solid #ccc;
   margin: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  display: felx;
-  flex:wrap;
+  
 }
 .card h2 {
   background-color: #5754a8;
   color: #fff;
   margin: 0;
 }
-.space-card {
+.card h3 {
   border-top: 1px solid #ccc;
   margin: 20px;
+  padding-top: 20px;
 }
 
 .main-image {
@@ -77,7 +82,8 @@ main > section.card:nth-of-type(2) a{
   text-decoration: none;
   color: #333;
 }
-main > section.card:nth-of-type(2) a:hover{
+main > section.card:nth-of-type(2) a:hover,
+main > section.card:nth-of-type(2) a:focus{
   
   color: #5754a8;
 }
@@ -88,7 +94,7 @@ main > section.card:nth-of-type(2) a:hover{
 /*------------- FOOTER ------------ */
 
 footer {
-  background-color: #5751a5;
+  background-color: #5754a8;
   color: white;
   text-align: center;
   padding: 1rem;
@@ -100,7 +106,6 @@ footer p {
   margin: 0.25rem 0;
 }
 
-footer p:first-child,
 footer p:first-child span {
   display: inline;
 }
