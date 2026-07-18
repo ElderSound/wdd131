@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rio de Janeiro | Place Page</title>
+
+    <meta name="description"
+        content="Explore Rio de Janeiro through key city facts, responsive imagery, local weather details, and a calculated wind chill value.">
+    <meta name="author" content="Elder Cuases">
+
+    <link rel="stylesheet" href="styles/place.css">
+
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Rio de Janeiro</h1>
+    </header>
+
+    <main>
+        <picture class="hero">
+            <source srcset="images/rio-christ-large.webp" media="(min-width: 768px)">
+
+            <img src="images/rio-christ-mobile.webp" alt="Christ the Redeemer overlooking Rio de Janeiro" width="600"
+                height="900">
+        </picture>
+
+        <section class="data-card">
+            <h2>Data</h2>
+
+            <dl>
+                <div>
+                    <dt>Country:</dt>
+                    <dd>Brazil</dd>
+                </div>
+
+                <div>
+                    <dt>Area:</dt>
+                    <dd>1,200.33 km²</dd>
+                </div>
+
+                <div>
+                    <dt>Population:</dt>
+                    <dd>6,211,223</dd>
+                </div>
+
+                <div>
+                    <dt>Language:</dt>
+                    <dd>Portuguese</dd>
+                </div>
+
+                <div>
+                    <dt>Currency:</dt>
+                    <dd>Brazilian Real</dd>
+                </div>
+
+                <div>
+                    <dt>Time Zone:</dt>
+                    <dd>UTC−3</dd>
+                </div>
+            </dl>
+        </section>
+
+        <section class="weather-card">
+            <h2>Weather</h2>
+
+            <img class="weather-icon" src="images/weather-partly-cloudy.svg" alt="Partly cloudy weather" width="100"
+                height="100">
+
+            <dl>
+                <div>
+                    <dt>Temperature:</dt>
+                    <dd><span id="temperature">8</span> °C</dd>
+                </div>
+
+                <div>
+                    <dt>Conditions:</dt>
+                    <dd>Partly Cloudy</dd>
+                </div>
+
+                <div>
+                    <dt>Wind:</dt>
+                    <dd><span id="wind-speed">10</span> km/h</dd>
+                </div>
+
+                <div>
+                    <dt>Wind Chill:</dt>
+                    <dd><span id="wind-chill">N/A</span></dd>
+                </div>
+            </dl>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Elder Cuases - Ecuador</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
