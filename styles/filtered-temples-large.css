@@ -20,9 +20,9 @@
 
   /* -------- Navigation -------- */
 
-  .navigation {
-    flex-direction: row;
-  }
+  nav > .navigation {
+  flex-direction: row;
+}
 
   .navigation a {
     display: block;

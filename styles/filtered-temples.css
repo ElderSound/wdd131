@@ -52,7 +52,7 @@ header {
 
 /* -------- Navigation -------- */
 
-.navigation {
+nav > .navigation {
   display: flex;
   flex-direction: column;
   list-style: none;
