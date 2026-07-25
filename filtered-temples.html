@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Filtered Temple Album</title>
+
+    <meta name="description"
+        content="Responsive temple album with dynamically generated temple cards, lazy-loaded images, and interactive filters.">
+    <meta name="author" content="Elder Cuases">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <span class="site-title">Temple Album</span>
+
+        <button type="button" id="menu" aria-label="Open navigation menu" aria-expanded="false"></button>
+
+        <nav aria-label="Temple filters">
+            <ul class="navigation">
+                <li>
+                    <a href="#" data-filter="home" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="#" data-filter="old">Old</a>
+                </li>
+                <li>
+                    <a href="#" data-filter="new">New</a>
+                </li>
+                <li>
+                    <a href="#" data-filter="large">Large</a>
+                </li>
+                <li>
+                    <a href="#" data-filter="small">Small</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+
+        <div class="temple-grid"></div>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>
+            Elder Cuases - Ecuador
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

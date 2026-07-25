@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* -------- Body --------  */
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+
+/*--------  Header --------  */
+
+header {
+  position: relative;
+  background-color: #3c096c;
+  color: white;
+  padding: 10px;
+}
+
+.site-title {
+  display: block;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* -------- Menu -------- */
+
+#menu {
+  position: absolute;
+  top: 10px;
+  right: 1rem;
+  border: 0;
+  background: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "✕";
+}
+
+/* -------- Navigation -------- */
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  background-color: #3c096c;
+}
+
+.navigation a {
+  display: none;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navigation a:hover,
+.navigation a:focus {
+  background-color: white;
+  color: #3c096c;
+}
+
+.navigation.open a {
+  display: block;
+}
+
+.navigation a.active {
+  background-color: white;
+  color: #3c096c;
+}
+
+/* -------- Main -------- */
+
+main {
+  width: 100%;
+  max-width: 1100px;
+  flex: 1;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+main h1 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* -------- Temple Grid -------- */
+
+.temple-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+/* -------- Temple Cards --------  */
+
+.temple-card {
+  width: 100%;
+  padding: 1rem;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  border: 1px solid #d3d3d3;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.temple-card h2 {
+  margin-bottom: 0.75rem;
+  color: #3c096c;
+}
+
+.temple-card p {
+  margin: 0.25rem 0;
+}
+
+.temple-card img {
+  display: block;
+  width: 100%;
+  height: 250px;
+  margin-top: 1rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* -------- Footer -------- */
+
+footer {
+  width: 100%;
+  padding: 1rem;
+  background-color: #3c096c;
+  color: white;
+  text-align: center;
+}
+
+footer p {
+  margin: 0.25rem 0;
+}
+
+footer p:first-child,
+footer p:first-child span {
+  display: inline;
+}

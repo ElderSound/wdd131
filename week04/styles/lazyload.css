@@ -1,0 +1,79 @@
+:root {
+    --primary-color: #008b8b;
+    --secondary-color: #e0f7f7;
+    --text-color: #222;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+/* ---------- Header ---------- */
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+/* ---------- Main ---------- */
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
+
+footer p:first-child,
+footer p:first-child span {
+    display: inline;
+}
+
+/* ---------- Large View ---------- */
+
+@media screen and (min-width: 768px) {
+
+    header {
+        padding: 2rem;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    main {
+        padding: 2rem;
+    }
+
+    footer {
+        padding: 1.5rem;
+    }
+
+}
