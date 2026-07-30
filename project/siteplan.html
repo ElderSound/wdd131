@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmileCare Dental Clinic Site Plan</title>
+
+    <meta name="description"
+        content="Website planning document for SmileCare Dental Clinic, including its purpose, audience, color scheme, typography, content plan, and responsive wireframes.">
+    <meta name="author" content="Elder Cuases">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/siteplan.css">
+
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="site-logo" aria-hidden="true">
+                <span>SC</span>
+            </div>
+
+            <div>
+                <p class="eyebrow">WDD 131 Final Project</p>
+                <h1>SmileCare Dental Clinic Site Plan</h1>
+                <p class="header-description">
+                    Planning document for a professional, responsive, and
+                    interactive dental clinic website.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="plan-section" id="site-name">
+            <h2>Site Name</h2>
+
+            <div class="content-card">
+                <h3>SmileCare Dental Clinic</h3>
+
+                <p>
+                    The proposed website name is
+                    <strong>SmileCare Dental Clinic</strong>.
+                </p>
+
+                <p>
+                    This name was selected because it communicates the clinic's
+                    focus on professional dental care while presenting a
+                    friendly and welcoming image. The word “Smile” connects
+                    directly with dental health, and “Care” emphasizes personal
+                    attention and patient well-being.
+                </p>
+
+                <p class="domain-example">
+                    Possible domain:
+                    <strong>smilecaredentalclinic.com</strong>
+                </p>
+
+                <p class="note">
+                    The business name can be replaced with the client's official
+                    clinic name before the final website is published.
+                </p>
+            </div>
+        </section>
+
+        <section class="plan-section" id="site-purpose">
+            <h2>Site Purpose</h2>
+
+            <div class="content-card">
+                <p>
+                    The purpose of the website is to give current and potential
+                    patients clear information about the dental clinic, its
+                    professionals, services, location, schedule, and appointment
+                    process.
+                </p>
+
+                <p>
+                    The website will also allow visitors to explore treatments,
+                    review frequently asked questions, save services of interest,
+                    and submit an appointment request from a mobile phone,
+                    tablet, or desktop computer.
+                </p>
+
+                <h3>Primary objectives</h3>
+
+                <ul class="check-list">
+                    <li>Present the clinic in a professional and trustworthy way.</li>
+                    <li>Explain the dental treatments offered by the clinic.</li>
+                    <li>Introduce the dentist and communicate professional experience.</li>
+                    <li>Answer common patient questions before an appointment.</li>
+                    <li>Make it easy to request an appointment.</li>
+                    <li>Provide location, schedule, telephone, and contact information.</li>
+                    <li>Encourage visitors to contact the clinic through WhatsApp.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="plan-section" id="target-audience">
+            <h2>Target Audience</h2>
+
+            <div class="audience-grid">
+                <article class="content-card">
+                    <h3>Families</h3>
+                    <p>
+                        Parents and families looking for preventive and general
+                        dental care in a safe and welcoming environment.
+                    </p>
+                </article>
+
+                <article class="content-card">
+                    <h3>Adults</h3>
+                    <p>
+                        Adults interested in oral health, dental cleaning,
+                        whitening, orthodontics, implants, or restorative
+                        procedures.
+                    </p>
+                </article>
+
+                <article class="content-card">
+                    <h3>New Patients</h3>
+                    <p>
+                        People comparing dental clinics who need information
+                        about treatments, prices, schedules, location, and the
+                        dentist's experience.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="plan-section" id="scenarios">
+            <h2>User Scenarios</h2>
+
+            <p class="section-introduction">
+                The website will be designed to answer questions that real
+                patients may ask before choosing or contacting a dental clinic.
+            </p>
+
+            <div class="scenario-grid">
+                <article class="scenario-card">
+                    <span class="scenario-number">01</span>
+                    <h3>Services</h3>
+                    <p>
+                        What dental treatments does the clinic offer, and which
+                        treatment may be appropriate for my needs?
+                    </p>
+                </article>
+
+                <article class="scenario-card">
+                    <span class="scenario-number">02</span>
+                    <h3>Appointments</h3>
+                    <p>
+                        How can I request an appointment, and what days and times
+                        are available?
+                    </p>
+                </article>
+
+                <article class="scenario-card">
+                    <span class="scenario-number">03</span>
+                    <h3>Professional Experience</h3>
+                    <p>
+                        Who is the dentist, what qualifications do they have, and
+                        how much professional experience do they have?
+                    </p>
+                </article>
+
+                <article class="scenario-card">
+                    <span class="scenario-number">04</span>
+                    <h3>Location</h3>
+                    <p>
+                        Where is the clinic located, what are its opening hours,
+                        and how can I contact it?
+                    </p>
+                </article>
+
+                <article class="scenario-card">
+                    <span class="scenario-number">05</span>
+                    <h3>First Visit</h3>
+                    <p>
+                        What should I bring to my first dental appointment, and
+                        how should I prepare?
+                    </p>
+                </article>
+
+                <article class="scenario-card">
+                    <span class="scenario-number">06</span>
+                    <h3>Emergency Care</h3>
+                    <p>
+                        What should I do if I have severe tooth pain, swelling,
+                        bleeding, or a broken tooth?
+                    </p>
+                </article>
+
+                <article class="scenario-card">
+                    <span class="scenario-number">07</span>
+                    <h3>Costs and Payment</h3>
+                    <p>
+                        How much does an initial consultation cost, and what
+                        payment methods or insurance options are accepted?
+                    </p>
+                </article>
+
+                <article class="scenario-card">
+                    <span class="scenario-number">08</span>
+                    <h3>Patient Confidence</h3>
+                    <p>
+                        What experiences have other patients had with the clinic
+                        and its treatments?
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="plan-section" id="content-plan">
+            <h2>Website Content Plan</h2>
+
+            <div class="page-grid">
+                <article class="page-card">
+                    <p class="page-label">Page 1</p>
+                    <h3>Home</h3>
+
+                    <ul>
+                        <li>Responsive navigation</li>
+                        <li>Hero section and appointment call to action</li>
+                        <li>Clinic introduction</li>
+                        <li>Featured dental services</li>
+                        <li>Dentist introduction</li>
+                        <li>Patient benefits</li>
+                        <li>Testimonials</li>
+                        <li>Frequently asked questions</li>
+                        <li>Location and contact summary</li>
+                    </ul>
+                </article>
+
+                <article class="page-card">
+                    <p class="page-label">Page 2</p>
+                    <h3>Services</h3>
+
+                    <ul>
+                        <li>Complete treatment list</li>
+                        <li>Service categories</li>
+                        <li>JavaScript service filtering</li>
+                        <li>Service cards generated from an array</li>
+                        <li>Favorite service buttons</li>
+                        <li>Saved favorites using localStorage</li>
+                        <li>Appointment call to action</li>
+                    </ul>
+                </article>
+
+                <article class="page-card">
+                    <p class="page-label">Page 3</p>
+                    <h3>Appointment</h3>
+
+                    <ul>
+                        <li>Clinic contact information</li>
+                        <li>Opening hours</li>
+                        <li>Appointment request form</li>
+                        <li>Treatment selection</li>
+                        <li>Preferred date and time</li>
+                        <li>Form validation</li>
+                        <li>Appointment confirmation message</li>
+                        <li>Saved appointment information</li>
+                    </ul>
+                </article>
+
+                <article class="page-card">
+                    <p class="page-label">Supporting Page</p>
+                    <h3>References</h3>
+
+                    <ul>
+                        <li>Image sources</li>
+                        <li>External information sources</li>
+                        <li>Font references</li>
+                        <li>Any content adapted from third parties</li>
+                    </ul>
+
+                    <p>
+                        This page will be linked from the footer on every page.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="plan-section" id="dynamic-features">
+            <h2>Planned JavaScript Features</h2>
+
+            <div class="content-card">
+                <p>
+                    The final website will include original JavaScript written
+                    specifically for this project. The following features will
+                    demonstrate the programming requirements of the course.
+                </p>
+
+                <div class="feature-table-wrapper">
+                    <table class="feature-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Feature</th>
+                                <th scope="col">JavaScript concepts</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Responsive navigation menu</td>
+                                <td>
+                                    DOM selection, event listener, class
+                                    modification, conditional behavior
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Dynamic service cards</td>
+                                <td>
+                                    Objects, arrays, functions, map(), template
+                                    literals, DOM output
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Service category filter</td>
+                                <td>
+                                    filter(), button events, conditional
+                                    branching, DOM updates
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Favorite services</td>
+                                <td>
+                                    Event listeners, arrays, objects,
+                                    localStorage, conditional branching
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>FAQ accordion</td>
+                                <td>
+                                    DOM interaction, event listeners, class
+                                    modification
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Appointment form</td>
+                                <td>
+                                    Form events, validation, functions,
+                                    conditions, dynamic confirmation
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Appointment summary</td>
+                                <td>
+                                    Objects, localStorage, template literals,
+                                    DOM modification
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Footer dates</td>
+                                <td>
+                                    Date object, DOM selection, text modification
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="plan-section" id="color-schema">
+            <h2>Color Schema</h2>
+
+            <p class="section-introduction">
+                The color palette uses blue tones to communicate cleanliness,
+                professionalism, calm, and trust. Green is used as an accent for
+                health-related actions and positive messages.
+            </p>
+
+            <div class="color-grid">
+                <article class="color-card">
+                    <div class="color-sample primary-color"></div>
+                    <div class="color-information">
+                        <h3>Deep Blue</h3>
+                        <p>#123B5D</p>
+                        <p>
+                            Headings, navigation, footer, primary buttons, and
+                            strong visual emphasis.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="color-card">
+                    <div class="color-sample secondary-color"></div>
+                    <div class="color-information">
+                        <h3>Dental Blue</h3>
+                        <p>#287EA8</p>
+                        <p>
+                            Links, icons, secondary buttons, decorative details,
+                            and interactive elements.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="color-card">
+                    <div class="color-sample accent-color"></div>
+                    <div class="color-information">
+                        <h3>Health Green</h3>
+                        <p>#2E8B72</p>
+                        <p>
+                            Appointment actions, success messages, selected
+                            services, and health-related highlights.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="color-card">
+                    <div class="color-sample light-color"></div>
+                    <div class="color-information">
+                        <h3>Soft Blue</h3>
+                        <p>#EAF6FA</p>
+                        <p>
+                            Section backgrounds, cards, visual separation, and
+                            supporting areas.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="color-card">
+                    <div class="color-sample background-color"></div>
+                    <div class="color-information">
+                        <h3>White</h3>
+                        <p>#FFFFFF</p>
+                        <p>
+                            Main background, cards, content areas, and clean
+                            visual spacing.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="color-card">
+                    <div class="color-sample text-color"></div>
+                    <div class="color-information">
+                        <h3>Charcoal</h3>
+                        <p>#25313C</p>
+                        <p>
+                            Paragraph text and important information requiring
+                            strong readability.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="plan-section" id="typography">
+            <h2>Typography</h2>
+
+            <div class="typography-grid">
+                <article class="type-card heading-font">
+                    <p class="type-label">Heading Font</p>
+                    <h3>Montserrat</h3>
+
+                    <p class="font-example">
+                        Professional Dental Care for Every Smile
+                    </p>
+
+                    <p>
+                        Montserrat will be used for the site name, navigation,
+                        headings, buttons, and important calls to action. Its
+                        geometric design gives the website a modern and
+                        professional appearance.
+                    </p>
+                </article>
+
+                <article class="type-card body-font">
+                    <p class="type-label">Body Font</p>
+                    <h3>Roboto</h3>
+
+                    <p class="font-example">
+                        Clear information helps patients make confident
+                        decisions about their dental care.
+                    </p>
+
+                    <p>
+                        Roboto will be used for paragraphs, lists, form fields,
+                        service descriptions, frequently asked questions, and
+                        supporting text because it is highly readable on mobile
+                        and desktop screens.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="plan-section" id="design-principles">
+            <h2>Design and Accessibility Principles</h2>
+
+            <div class="content-card">
+                <div class="principle-grid">
+                    <article>
+                        <h3>Proximity</h3>
+                        <p>
+                            Related content, such as service names and
+                            descriptions, will be grouped together.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>Alignment</h3>
+                        <p>
+                            Text, cards, buttons, and form fields will follow a
+                            consistent visual grid.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>Repetition</h3>
+                        <p>
+                            Colors, buttons, spacing, typography, and card styles
+                            will be repeated across all pages.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>Contrast</h3>
+                        <p>
+                            Dark text and strong buttons will appear against
+                            light backgrounds to support readability.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>Accessibility</h3>
+                        <p>
+                            Semantic HTML, labels, alt text, keyboard focus
+                            indicators, sufficient contrast, and descriptive
+                            links will be included.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>Responsive Design</h3>
+                        <p>
+                            The layout will adapt to portrait phones, landscape
+                            phones, tablets, laptops, and larger desktop
+                            screens.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="plan-section" id="site-map">
+            <h2>Site Map</h2>
+
+            <div class="site-map" aria-label="Planned website structure">
+                <div class="map-root">SmileCare Dental Clinic</div>
+
+                <div class="map-line" aria-hidden="true"></div>
+
+                <div class="map-pages">
+                    <div class="map-page">
+                        <strong>Home</strong>
+                        <span>index.html</span>
+                    </div>
+
+                    <div class="map-page">
+                        <strong>Services</strong>
+                        <span>services.html</span>
+                    </div>
+
+                    <div class="map-page">
+                        <strong>Appointment</strong>
+                        <span>appointment.html</span>
+                    </div>
+
+                    <div class="map-page">
+                        <strong>References</strong>
+                        <span>references.html</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="plan-section" id="wireframes">
+            <h2>Wireframes</h2>
+
+            <p class="section-introduction">
+                These wireframes represent the planned layout of the home page.
+                The final design may be adjusted during development while
+                maintaining the same content hierarchy and user experience.
+            </p>
+
+            <div class="wireframe-layout">
+                <article class="wireframe-card mobile-wireframe-card">
+                    <div class="wireframe-heading">
+                        <h3>Mobile View</h3>
+                        <p>Portrait screen layout</p>
+                    </div>
+
+                    <div class="wireframe mobile-wireframe">
+                        <div class="wf-mobile-header">
+                            <span class="wf-logo">LOGO</span>
+                            <span class="wf-menu">☰</span>
+                        </div>
+
+                        <div class="wf-hero">
+                            <span class="wf-label">Hero image</span>
+                            <div class="wf-title-line"></div>
+                            <div class="wf-title-line short"></div>
+                            <div class="wf-text-line"></div>
+                            <div class="wf-text-line short"></div>
+                            <div class="wf-button">Book Appointment</div>
+                        </div>
+
+                        <div class="wf-section">
+                            <span class="wf-section-title">Featured Services</span>
+
+                            <div class="wf-service-card">
+                                <div class="wf-icon"></div>
+                                <div>
+                                    <div class="wf-text-line"></div>
+                                    <div class="wf-text-line short"></div>
+                                </div>
+                            </div>
+
+                            <div class="wf-service-card">
+                                <div class="wf-icon"></div>
+                                <div>
+                                    <div class="wf-text-line"></div>
+                                    <div class="wf-text-line short"></div>
+                                </div>
+                            </div>
+
+                            <div class="wf-service-card">
+                                <div class="wf-icon"></div>
+                                <div>
+                                    <div class="wf-text-line"></div>
+                                    <div class="wf-text-line short"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wf-about">
+                            <div class="wf-image-placeholder">
+                                Dentist image
+                            </div>
+
+                            <span class="wf-section-title">Meet the Dentist</span>
+                            <div class="wf-text-line"></div>
+                            <div class="wf-text-line"></div>
+                            <div class="wf-text-line short"></div>
+                        </div>
+
+                        <div class="wf-section">
+                            <span class="wf-section-title">Why Choose Us?</span>
+
+                            <div class="wf-benefit-row">
+                                <div class="wf-small-icon"></div>
+                                <div class="wf-text-line"></div>
+                            </div>
+
+                            <div class="wf-benefit-row">
+                                <div class="wf-small-icon"></div>
+                                <div class="wf-text-line"></div>
+                            </div>
+
+                            <div class="wf-benefit-row">
+                                <div class="wf-small-icon"></div>
+                                <div class="wf-text-line"></div>
+                            </div>
+                        </div>
+
+                        <div class="wf-testimonial">
+                            <span class="wf-section-title">Patient Review</span>
+                            <div class="wf-text-line"></div>
+                            <div class="wf-text-line"></div>
+                            <div class="wf-text-line short"></div>
+                        </div>
+
+                        <div class="wf-section">
+                            <span class="wf-section-title">FAQ</span>
+                            <div class="wf-accordion">Question +</div>
+                            <div class="wf-accordion">Question +</div>
+                            <div class="wf-accordion">Question +</div>
+                        </div>
+
+                        <div class="wf-contact">
+                            <span class="wf-section-title">Contact</span>
+                            <div class="wf-map">Map</div>
+                            <div class="wf-button">Request Appointment</div>
+                        </div>
+
+                        <div class="wf-footer">
+                            Footer, contact and references
+                        </div>
+                    </div>
+                </article>
+
+                <article class="wireframe-card desktop-wireframe-card">
+                    <div class="wireframe-heading">
+                        <h3>Desktop View</h3>
+                        <p>Large-screen layout</p>
+                    </div>
+
+                    <div class="wireframe desktop-wireframe">
+                        <div class="wf-desktop-header">
+                            <span class="wf-logo">LOGO</span>
+
+                            <div class="wf-navigation">
+                                <span>Home</span>
+                                <span>Services</span>
+                                <span>Appointment</span>
+                                <span>Contact</span>
+                            </div>
+
+                            <div class="wf-small-button">Book Now</div>
+                        </div>
+
+                        <div class="wf-desktop-hero">
+                            <div class="wf-hero-content">
+                                <span class="wf-label">Hero content</span>
+                                <div class="wf-desktop-title"></div>
+                                <div class="wf-desktop-title short"></div>
+                                <div class="wf-text-line"></div>
+                                <div class="wf-text-line short"></div>
+
+                                <div class="wf-button-row">
+                                    <div class="wf-button">Book Appointment</div>
+                                    <div class="wf-outline-button">Our Services</div>
+                                </div>
+                            </div>
+
+                            <div class="wf-hero-image">
+                                Dentist or clinic image
+                            </div>
+                        </div>
+
+                        <div class="wf-desktop-section">
+                            <span class="wf-section-title">Featured Services</span>
+
+                            <div class="wf-desktop-services">
+                                <div class="wf-desktop-card">
+                                    <div class="wf-large-icon"></div>
+                                    <div class="wf-text-line"></div>
+                                    <div class="wf-text-line short"></div>
+                                </div>
+
+                                <div class="wf-desktop-card">
+                                    <div class="wf-large-icon"></div>
+                                    <div class="wf-text-line"></div>
+                                    <div class="wf-text-line short"></div>
+                                </div>
+
+                                <div class="wf-desktop-card">
+                                    <div class="wf-large-icon"></div>
+                                    <div class="wf-text-line"></div>
+                                    <div class="wf-text-line short"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wf-desktop-about">
+                            <div class="wf-about-image">
+                                Dentist image
+                            </div>
+
+                            <div class="wf-about-content">
+                                <span class="wf-section-title">
+                                    Professional Care You Can Trust
+                                </span>
+                                <div class="wf-text-line"></div>
+                                <div class="wf-text-line"></div>
+                                <div class="wf-text-line"></div>
+                                <div class="wf-text-line short"></div>
+                                <div class="wf-button">Meet the Dentist</div>
+                            </div>
+                        </div>
+
+                        <div class="wf-desktop-benefits">
+                            <span class="wf-section-title">Why Choose Us?</span>
+
+                            <div class="wf-benefit-grid">
+                                <div class="wf-benefit">
+                                    <div class="wf-small-icon"></div>
+                                    <div class="wf-text-line"></div>
+                                </div>
+
+                                <div class="wf-benefit">
+                                    <div class="wf-small-icon"></div>
+                                    <div class="wf-text-line"></div>
+                                </div>
+
+                                <div class="wf-benefit">
+                                    <div class="wf-small-icon"></div>
+                                    <div class="wf-text-line"></div>
+                                </div>
+
+                                <div class="wf-benefit">
+                                    <div class="wf-small-icon"></div>
+                                    <div class="wf-text-line"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wf-desktop-testimonials">
+                            <span class="wf-section-title">
+                                Patient Testimonials
+                            </span>
+
+                            <div class="wf-testimonial-grid">
+                                <div class="wf-review-card">
+                                    <div class="wf-text-line"></div>
+                                    <div class="wf-text-line"></div>
+                                    <div class="wf-text-line short"></div>
+                                </div>
+
+                                <div class="wf-review-card">
+                                    <div class="wf-text-line"></div>
+                                    <div class="wf-text-line"></div>
+                                    <div class="wf-text-line short"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wf-desktop-contact">
+                            <div class="wf-contact-information">
+                                <span class="wf-section-title">
+                                    Visit Our Clinic
+                                </span>
+                                <div class="wf-text-line"></div>
+                                <div class="wf-text-line"></div>
+                                <div class="wf-text-line short"></div>
+                                <div class="wf-button">Contact Us</div>
+                            </div>
+
+                            <div class="wf-desktop-map">Map</div>
+                        </div>
+
+                        <div class="wf-footer">
+                            Logo | Navigation | Contact | References
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="plan-section" id="development-standards">
+            <h2>Development Standards</h2>
+
+            <div class="content-card">
+                <ul class="standards-list">
+                    <li>
+                        The project will use original HTML, CSS, and JavaScript.
+                    </li>
+                    <li>
+                        At least three complete pages will share consistent
+                        navigation and visual styling.
+                    </li>
+                    <li>
+                        All HTML and CSS will be validated before submission.
+                    </li>
+                    <li>
+                        Images will be resized, compressed, and saved in modern
+                        formats when appropriate.
+                    </li>
+                    <li>
+                        Images below the initial viewport will use lazy loading.
+                    </li>
+                    <li>
+                        The website will use semantic HTML and accessible forms.
+                    </li>
+                    <li>
+                        JavaScript output strings will exclusively use template
+                        literals.
+                    </li>
+                    <li>
+                        The project will use more than one JavaScript function.
+                    </li>
+                    <li>
+                        The project will use arrays, objects, array methods,
+                        conditions, events, DOM interaction, and localStorage.
+                    </li>
+                    <li>
+                        Lighthouse will be tested for performance,
+                        accessibility, best practices, and SEO on mobile and
+                        desktop.
+                    </li>
+                    <li>
+                        All external material will be cited on the references
+                        page.
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>
+            Elder Cuases - Ecuador
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
