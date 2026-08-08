@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Review Confirmation</title>
+
+    <meta name="description"
+        content="Confirmation page for submitted product reviews with a locally stored counter that tracks completed review submissions.">
+    <meta name="author" content="Elder Cuases">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/form.css">
+
+    <script src="scripts/review.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Review Submitted</h1>
+    </header>
+
+    <main>
+        <section class="confirmation">
+            <h2>Thank You!</h2>
+
+            <p>Your product review has been submitted successfully.</p>
+
+            <p>
+                Reviews completed:
+                <strong id="review-count">0</strong>
+            </p>
+
+            <a href="form.html">Submit Another Review</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>
+            Elder Cuases - Ecuador
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
