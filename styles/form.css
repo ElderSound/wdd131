@@ -81,6 +81,18 @@ main {
 
 /*---------- Form ---------- */
 
+.required {
+  color: #b00020;
+  font-weight: 700;
+}
+
+.required-note {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
 form {
   position: relative;
   overflow: hidden;
