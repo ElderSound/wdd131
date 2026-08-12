@@ -1,0 +1,46 @@
+/* ---------------- References ---------------- */
+
+.references-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.reference-card {
+  padding: 1.5rem;
+
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+
+  background-color: var(--white);
+}
+
+.reference-card h2 {
+  margin-bottom: 0.75rem;
+  color: var(--primary-color);
+}
+
+.reference-card p {
+  margin-bottom: 0.75rem;
+  color: var(--muted-text);
+}
+
+.reference-card a {
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
+.reference-card a:hover,
+.reference-card a:focus-visible {
+  color: var(--accent-color);
+}
+
+
+/* ---------------- Tablet ---------------- */
+
+@media screen and (min-width: 40rem) {
+
+  .references-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}

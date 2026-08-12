@@ -1,0 +1,294 @@
+/* ---------------- Appointment ---------------- */
+
+.appointment-layout {
+  display: grid;
+  gap: 2.5rem;
+}
+
+/* ---------------- Appointment Information ---------------- */
+
+.appointment-information {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.appointment-image {
+  width: 100%;
+  max-width: 26rem;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 0.75rem;
+}
+
+.appointment-image img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.appointment-intro > p {
+  color: var(--muted-text);
+}
+
+.appointment-note {
+  margin-top: 1.5rem;
+  padding: 1.25rem;
+  border-left: 0.3rem solid var(--accent-color);
+  background-color: var(--light-blue);
+}
+
+.appointment-note h3 {
+  margin-bottom: 0.75rem;
+}
+
+.appointment-note ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.appointment-note li {
+  margin-bottom: 0.5rem;
+}
+
+.appointment-note li:last-child {
+  margin-bottom: 0;
+}
+
+/* ---------------- Opening Hours ---------------- */
+
+.appointment-hours {
+  margin-top: 1.25rem;
+  padding: 1.25rem;
+
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+
+  background-color: var(--white);
+}
+
+.appointment-hours h3 {
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.hours-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+
+  padding: 0.65rem 0;
+
+  border-bottom: 1px solid var(--border-color);
+}
+
+.hours-row:last-child {
+  border-bottom: 0;
+}
+
+.hours-row span:first-child {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.hours-row span:last-child {
+  color: var(--muted-text);
+  text-align: right;
+}
+
+/* ---------------- Form ---------------- */
+
+.appointment-form-container {
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  background-color: var(--white);
+  box-shadow: 0 4px 14px rgba(18, 59, 93, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+.appointment-form-container::before,
+.appointment-form-container::after {
+  position: absolute;
+
+  border-radius: 50%;
+  background-color: rgba(40, 126, 168, 0.08);
+
+  content: "";
+}
+
+.appointment-form-container::before {
+  top: -4rem;
+  right: -3rem;
+
+  width: 10rem;
+  height: 10rem;
+}
+
+.appointment-form-container::after {
+  bottom: -3rem;
+  left: -2rem;
+
+  width: 7rem;
+  height: 7rem;
+}
+
+.form-heading {
+  margin-bottom: 1.5rem;
+}
+
+.form-heading h2 {
+  margin-bottom: 0.5rem;
+}
+
+.required-message {
+  margin: 0;
+  color: var(--muted-text);
+  font-size: 0.9rem;
+}
+
+.required-message span,
+.required-marker {
+  color: #b42318;
+  font-weight: 700;
+}
+
+#appointment-form {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.form-group {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.form-group label {
+  color: var(--primary-color);
+  font-family: var(--heading-font);
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.4rem;
+  background-color: var(--white);
+  color: var(--text-color);
+  font: inherit;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--secondary-color);
+  outline: 2px solid rgba(40, 126, 168, 0.2);
+  outline-offset: 1px;
+}
+
+.submit-button {
+  width: 100%;
+}
+
+/* ---------------- Services options ---------------- */
+
+.services-options {
+  margin: 0;
+  padding: 1rem 1.25rem 1.25rem;
+
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+
+  background-color: var(--lighter-blue);
+}
+
+.services-options legend {
+  padding: 0 0.4rem;
+
+  color: var(--primary-color);
+  font-family: var(--heading-font);
+  font-weight: 600;
+}
+
+.field-help {
+  margin: 0 0 0.5rem;
+  color: var(--muted-text);
+  font-size: 0.9rem;
+}
+
+.checkbox-option {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.65rem 0;
+  cursor: pointer;
+}
+
+.checkbox-option input {
+  width: auto;
+  margin: 0;
+  accent-color: var(--accent-color);
+}
+
+.form-error {
+  margin: 0;
+  color: #b42318;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* ---------------- Confirmation ---------------- */
+
+.appointment-confirmation {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid var(--accent-color);
+  border-radius: 0.5rem;
+  background-color: var(--light-blue);
+}
+
+.appointment-confirmation h3 {
+  margin-bottom: 0.75rem;
+  color: var(--primary-color);
+}
+
+.appointment-confirmation p {
+  margin-bottom: 0.5rem;
+}
+
+.appointment-confirmation p:last-child {
+  margin-bottom: 0;
+}
+
+/* ---------------- Tablet ---------------- */
+
+@media screen and (min-width: 40rem) {
+  .appointment-form-container {
+    padding: 2rem;
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+/* ---------------- Large ---------------- */
+
+@media screen and (min-width: 64rem) {
+  .appointment-layout {
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: start;
+  }
+
+  .appointment-image {
+    max-width: 22rem;
+  }
+}

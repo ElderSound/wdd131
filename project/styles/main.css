@@ -1,0 +1,1050 @@
+:root {
+  --primary-color: #123b5d;
+  --secondary-color: #287ea8;
+  --accent-color: #2e8b72;
+  --light-blue: #eaf6fa;
+  --lighter-blue: #f5fbfd;
+  --background-color: #ffffff;
+  --text-color: #25313c;
+  --muted-text: #566571;
+  --border-color: #c8dbe4;
+  --white: #ffffff;
+
+  --heading-font: "Montserrat", Arial, sans-serif;
+  --body-font: "Roboto", Arial, sans-serif;
+
+  --max-width: 75rem;
+}
+
+/* ---------- Reset and base styles ---------- */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  color: var(--primary-color);
+  font-family: var(--heading-font);
+  line-height: 1.2;
+}
+
+p {
+  margin-top: 0;
+}
+
+a {
+  color: inherit;
+}
+
+/* ---------- Header and navigation ---------- */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    width: 100%;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 2px 8px rgba(18, 59, 93, 0.08);
+}
+
+.navigation-container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0.85rem 1rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+.brand {
+  display: flex;
+  width: fit-content;
+  color: var(--primary-color);
+  text-decoration: none;
+  gap: 0.65rem;
+  align-items: center;
+}
+
+.brand-mark {
+  display: grid;
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-family: var(--heading-font);
+  font-size: 1.25rem;
+  font-weight: 700;
+  place-items: center;
+}
+
+.brand-name {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--heading-font);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.brand-name span {
+  color: var(--secondary-color);
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.menu-button {
+  width: 2.8rem;
+  height: 2.8rem;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.menu-button::before {
+  font-size: 1.8rem;
+  content: "☰";
+}
+
+.menu-button.open::before {
+  content: "✕";
+}
+
+.navigation {
+  display: none;
+  grid-column: 1 / -1;
+}
+
+.navigation.open {
+  display: block;
+}
+
+.navigation a {
+  display: block;
+  padding: 0.9rem 0.5rem;
+  border-top: 1px solid var(--border-color);
+  color: var(--primary-color);
+  font-family: var(--heading-font);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.navigation a:hover,
+.navigation a:focus-visible {
+  color: var(--secondary-color);
+}
+
+.navigation a[aria-current="page"] {
+  color: var(--accent-color);
+}
+
+.header-appointment-button {
+  display: none;
+}
+
+/* ---------- Main ---------- */
+
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--light-blue);
+}
+
+.hero-picture {
+    position: absolute;
+    inset: 0;
+}
+
+.hero-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 4.5rem 1rem;
+}
+.hero::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(234, 246, 250, 0.82) 20%,
+    rgba(234, 246, 250, 0.22) 55%,
+    rgba(234, 246, 250, 0.25) 100%
+  );
+  content: "";
+}
+
+.eyebrow {
+  margin-bottom: 0.75rem;
+  color: var(--accent-color);
+  font-family: var(--heading-font);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  max-width: 42rem;
+  margin-bottom: 1.25rem;
+  font-size: clamp(2rem, 9vw, 3.5rem);
+}
+
+
+.hero-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.8rem 1.2rem;
+  border: 2px solid transparent;
+  border-radius: 0.4rem;
+  font-family: var(--heading-font);
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+
+.primary-button {
+  background-color: var(--accent-color);
+  color: var(--white);
+}
+
+.primary-button:hover,
+.primary-button:focus-visible {
+  background-color: var(--primary-color);
+}
+
+.hero .secondary-button {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.62),
+    rgba(234, 246, 250, 0.52)
+  );
+
+  border-color: var(--porimary-color);
+  color: var(--primary-color);
+
+  box-shadow: 0 3px 10px rgba(18, 59, 93, 0.12);
+}
+
+.secondary-button:hover,
+.secondary-button:focus-visible {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+/* ---------- Shared section layout ---------- */
+
+.section-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 3.5rem 1rem;
+}
+
+/* ---------- Featured Services Cards ---------- */
+
+.featured-service-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  background-color: var(--white);
+  gap: 1rem;
+  align-items: center;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(18, 59, 93, 0.08);
+}
+
+.featured-services-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+/* ---------- Services Icon ---------- */
+.service-icon {
+  display: grid;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  color: var(--white);
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 1.25rem;
+  place-items: center;
+}
+
+/* ---------- Services Content ---------- */
+
+.service-information h3 {
+  margin-bottom: 0.35rem;
+}
+
+.service-information p {
+  margin-bottom: 0;
+  color: var(--muted-text);
+}
+
+/* ---------- Focus ---------- */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--accent-color);
+  outline-offset: 3px;
+}
+
+/* ---------- Dentist ---------- */
+
+.dentist-section {
+  background-color: var(--light-blue);
+}
+
+.dentist-layout {
+  display: grid;
+  gap: 2rem;
+}
+
+.dentist-image-container {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 0.75rem;
+}
+
+.dentist-image-container img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.dentist-content h2 {
+  margin-bottom: 1rem;
+}
+
+.dentist-content p {
+  color: var(--muted-text);
+}
+
+.dentist-content .button {
+  display: block;
+  width: fit-content;
+  margin: 0.5rem auto 0;
+}
+
+/* ---------- Benefits ---------- */
+
+.section-heading {
+  max-width: 42rem;
+  margin-bottom: 2rem;
+}
+
+.section-heading > p:last-child {
+  color: var(--muted-text);
+}
+
+.benefits-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.benefit-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  gap: 1rem;
+  align-items: start;
+}
+
+.benefit-icon {
+  display: grid;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  background-color: var(--light-blue);
+  color: var(--secondary-color);
+  font-family: var(--heading-font);
+  font-size: 0.75rem;
+  font-weight: 700;
+  place-items: center;
+  align-self: center;
+}
+
+.benefit-item h3 {
+  margin-bottom: 0.35rem;
+}
+
+.benefit-item p {
+  margin-bottom: 0;
+  color: var(--muted-text);
+}
+
+/* ---------- Testimonials ---------- */
+
+.testimonials-section {
+  background-color: var(--light-blue);
+}
+
+.testimonials-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.testimonial-card {
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  background-color: var(--white);
+  box-shadow: 0 4px 12px rgba(18, 59, 93, 0.08);
+}
+
+.testimonial-text {
+  margin-bottom: 1rem;
+  color: var(--text-color);
+  font-size: 1.05rem;
+  font-style: italic;
+}
+
+.testimonial-author {
+  margin-bottom: 0;
+  color: var(--primary-color);
+  font-family: var(--heading-font);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* ---------- FAQ ---------- */
+
+.faq-list {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.faq-item {
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    background-color: var(--white);
+    overflow: hidden;
+}
+
+.faq-item h3 {
+    margin-bottom: 0;
+}
+
+.faq-question {
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    border: 0;
+    background-color: var(--white);
+    color: var(--primary-color);
+    font-family: var(--heading-font);
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+}
+
+.faq-question:hover {
+  background-color: var(--lighter-blue);
+}
+
+.faq-question:focus-visible {
+  outline: 2px solid var(--secondary-color);
+  outline-offset: -2px;
+}
+
+.faq-item.open .faq-question {
+  background-color: var(--lighter-blue);
+}
+
+.faq-symbol {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.faq-answer {
+    display: none;
+    padding: 0 1rem 1rem;
+}
+
+.faq-item.open .faq-answer {
+    display: block;
+}
+
+.faq-answer p {
+    margin-bottom: 0;
+    color: var(--muted-text);
+}
+
+/* ---------- Contact ---------- */
+
+.contact-section {
+    background-color: var(--white);
+}
+
+.contact-layout {
+    display: grid;
+    gap: 1rem 2rem;
+}
+
+.contact-heading {
+    margin-bottom: 0;
+}
+
+.contact-description {
+    margin-bottom: 0;
+    color: var(--muted-text);
+    font-size: 1.05rem;
+}
+
+.contact-details {
+    margin: 1.25rem 0 0;
+    padding: 1.25rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    background-color: var(--lighter-blue);
+    font-style: normal;
+}
+
+.contact-details p {
+    margin-bottom: 0.75rem;
+}
+
+.contact-details p:last-child {
+    margin-bottom: 0;
+}
+
+.contact-details a {
+    color: var(--secondary-color);
+}
+
+.clinic-map {
+    overflow: hidden;
+    min-height: 20rem;
+    border-radius: 0.75rem;
+}
+
+.clinic-map iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 20rem;
+    border: 0;
+}
+
+.contact-button {
+    width: 100%;
+}
+
+/* ---------------- Page Hero ---------------- */
+
+.page-hero {
+  position: relative;
+  overflow: hidden;
+
+  background: linear-gradient(
+    135deg,
+    rgba(18, 59, 93, 0.98),
+    rgba(40, 126, 168, 0.92)
+  );
+
+  color: var(--white);
+}
+
+.page-hero::before,
+.page-hero::after {
+  position: absolute;
+
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.08);
+
+  content: "";
+}
+
+.page-hero::before {
+  top: -6rem;
+  right: -5rem;
+
+  width: 15rem;
+  height: 15rem;
+}
+
+.page-hero::after {
+  bottom: -5rem;
+  left: -4rem;
+
+  width: 11rem;
+  height: 11rem;
+}
+
+.page-hero .section-container {
+  position: relative;
+  z-index: 1;
+}
+
+.page-hero .eyebrow {
+  color: #d9f3f8;
+}
+
+.page-hero h1 {
+  max-width: 45rem;
+  margin-bottom: 1rem;
+
+  color: var(--white);
+
+  font-size: clamp(2rem, 8vw, 3.2rem);
+}
+
+.page-hero p:last-child {
+  max-width: 42rem;
+  margin-bottom: 0;
+
+  color: #effaff;
+
+  font-size: 1.05rem;
+}
+
+/* ---------------- Whatsapp Button---------------- */
+
+.whatsapp-button {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 200;
+
+  display: grid;
+  width: 3.5rem;
+  height: 3.5rem;
+
+  border-radius: 50%;
+  background-color: var(--accent-color);
+
+  color: var(--white);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+  place-items: center;
+}
+
+.whatsapp-button svg {
+  width: 1.7rem;
+  height: 1.7rem;
+  fill: currentColor;
+}
+
+.whatsapp-button:hover,
+.whatsapp-button:focus-visible {
+  transform: translateY(-2px);
+}
+
+/* ---------------- Footer ---------------- */
+
+.site-footer {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.footer-container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 3rem 1rem 1.5rem;
+}
+
+.footer-main {
+  display: grid;
+  gap: 2rem;
+}
+
+.footer-brand p {
+  max-width: 20rem;
+  margin: 1rem 0 0;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+}
+
+.footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  color: var(--white);
+  text-decoration: none;
+}
+
+.footer-logo .brand-mark {
+  background-color: transparent;
+  border: 2px solid var(--white);
+  color: var(--white);
+}
+
+.footer-brand-name {
+  display: flex;
+  flex-direction: column;
+
+  font-family: var(--heading-font);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.footer-brand-name span {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.footer-main h2 {
+  margin-bottom: 1rem;
+  color: var(--white);
+  font-size: 1rem;
+}
+
+.footer-links nav {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.footer-links a,
+.footer-contact a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-links a:focus-visible,
+.footer-contact a:hover,
+.footer-contact a:focus-visible {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+.footer-contact address {
+  font-style: normal;
+}
+
+.footer-contact p {
+  margin-bottom: 0.5rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* ---------------- Social Media ---------------- */
+
+.social-links {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.social-links a {
+  display: grid;
+  width: 2.75rem;
+  height: 2.75rem;
+
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+
+  color: var(--white);
+
+  place-items: center;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.social-links a:hover,
+.social-links a:focus-visible {
+  background-color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+.social-links svg {
+  width: 1.25rem;
+  height: 1.25rem;
+
+  fill: currentColor;
+  stroke: currentColor;
+  stroke-width: 1.8;
+}
+
+.social-links svg rect,
+.social-links svg circle {
+  fill: none;
+}
+
+.social-links .social-dot {
+  fill: currentColor;
+  stroke: none;
+}
+
+
+/* ---------------- Footer Bottom---------------- */
+
+.footer-bottom {
+  display: grid;
+  gap: 0.4rem;
+
+  margin-top: 2.5rem;
+  padding-top: 1.25rem;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* ---------- Intermediate screens ---------- */
+
+@media screen and (min-width: 40rem) {
+
+   .site-header { border-bottom: 0; } 
+
+    main {
+    max-width: 760px;
+}
+
+  .hero-actions {
+    flex-direction: row;
+  }
+
+  .hero::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(234, 246, 250, 0.62) 20%,
+    rgba(234, 246, 250, 0.22) 55%,
+    rgba(234, 246, 250, 0.15) 100%
+  );
+  content: "";
+}
+
+  .featured-services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .featured-service-card {
+    flex: 0 1 calc(50% - 0.5rem);
+  }
+  .benefits-grid,
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonial-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-author {
+  margin-top: auto;
+}
+
+  .contact-layout {
+    grid-template-areas:
+        "heading heading"
+        "details map"
+        "button .";
+    grid-template-columns: 0.8fr 1.2fr;
+    align-items: stretch;
+}
+
+.contact-heading {
+    grid-area: heading;
+
+}
+
+.contact-details {
+    grid-area: details;
+    margin: 0;
+}
+
+.clinic-map {
+    grid-area: map;
+    min-height: 0;
+    height: auto;
+     height: 18rem;
+    min-height: 0;
+    align-self: center;
+}
+
+.clinic-map iframe {
+    min-height: 0;
+    height: 100%;
+}
+
+.contact-button {
+    grid-area: button;
+   width: 100%;
+}
+.contact-information {
+    grid-area: information;
+}
+
+  .footer-main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* ---------- Desktop ---------- */
+
+@media screen and (min-width: 64rem) {
+
+    main {
+    max-width: 1100px;
+}
+
+  .navigation-container {
+    grid-template-columns: auto 1fr auto;
+    padding: 1rem 2rem;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .navigation {
+    display: flex;
+    grid-column: auto;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .navigation a {
+    padding: 0.5rem 0;
+    border-top: 0;
+  }
+
+  .header-appointment-button {
+    display: inline-block;
+    padding: 0.7rem 1rem;
+    border-radius: 0.4rem;
+    background-color: var(--accent-color);
+    color: var(--white);
+    font-family: var(--heading-font);
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .header-appointment-button:hover,
+  .header-appointment-button:focus-visible {
+    background-color: var(--primary-color);
+  }
+
+  .hero-content {
+    padding: 6rem 2rem;
+  }
+
+  .hero::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(234, 246, 250, 0.62) 25%,
+    rgba(234, 246, 250, 0.22) 55%,
+    rgba(234, 246, 250, 0.15) 100%
+  );
+  content: "";
+}
+
+  .featured-services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .featured-service-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .service-icon {
+    justify-self: center;
+  }
+
+  .dentist-layout {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+ .dentist-content .button {
+  display: inline-block;
+  width: auto;
+  margin: 0.5rem 0 0;
+}
+
+  .benefits-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .footer-main {
+    grid-template-columns: 1.5fr 1fr 1.2fr 0.8fr;
+  }
+
+  .footer-bottom {
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+  }
+
+  .footer-bottom p:last-child {
+    text-align: right;
+  }
+}
