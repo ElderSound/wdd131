@@ -266,15 +266,15 @@ main {
     rgba(234, 246, 250, 0.52)
   );
 
-  border-color: var(--porimary-color);
+  border-color: var(--primary-color);
   color: var(--primary-color);
 
   box-shadow: 0 3px 10px rgba(18, 59, 93, 0.12);
 }
 
-.secondary-button:hover,
-.secondary-button:focus-visible {
-  background-color: var(--primary-color);
+.hero .secondary-button:hover,
+.hero .secondary-button:focus-visible {
+  background: var(--primary-color);
   color: var(--white);
 }
 
@@ -865,15 +865,12 @@ textarea:focus-visible {
   }
 
   .hero::after {
-  position: absolute;
-  inset: 0;
   background: linear-gradient(
     to bottom,
     rgba(234, 246, 250, 0.62) 20%,
     rgba(234, 246, 250, 0.22) 55%,
     rgba(234, 246, 250, 0.15) 100%
   );
-  content: "";
 }
 
   .featured-services-grid {
@@ -918,12 +915,10 @@ textarea:focus-visible {
 }
 
 .clinic-map {
-    grid-area: map;
-    min-height: 0;
-    height: auto;
-     height: 18rem;
-    min-height: 0;
-    align-self: center;
+  grid-area: map;
+  height: 18rem;
+  min-height: 0;
+  align-self: center;
 }
 
 .clinic-map iframe {
@@ -934,9 +929,6 @@ textarea:focus-visible {
 .contact-button {
     grid-area: button;
    width: 100%;
-}
-.contact-information {
-    grid-area: information;
 }
 
   .footer-main {
@@ -996,15 +988,12 @@ textarea:focus-visible {
   }
 
   .hero::after {
-  position: absolute;
-  inset: 0;
   background: linear-gradient(
     to bottom,
     rgba(234, 246, 250, 0.62) 25%,
     rgba(234, 246, 250, 0.22) 55%,
     rgba(234, 246, 250, 0.15) 100%
   );
-  content: "";
 }
 
   .featured-services-grid {

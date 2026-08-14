@@ -34,7 +34,6 @@
   color: var(--accent-color);
 }
 
-
 /* ---------------- Tablet ---------------- */
 
 @media screen and (min-width: 40rem) {
